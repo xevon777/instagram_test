@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+    <!-- <script type="text/javascript" src="/js/jq.js"></script>-->
+    <script>
+        var url = "images/planeta.jpg";
+        $(document).ready(function() {
+            $(".button_3").click(function() {
+                for(i=0;i<=11;i++) {
+                    addPhoto(url);
+                }
+            })
+        });
+        function addPhoto(url) {
+            var template = '<div class="block_photo">'   +
+                    '<img class="image" src='+url+'>'
+                    +
+                    '</div>'
+            $('.content').append(template);
+        }
+    </script>
+
+</head>
+<body>
+
+<header class="header">
+
+    <div class="cell container_logo">
+        <a href="" title="Главная страница" class="logo">
+            <img src="images/logo.png" class="logo">
+
+        </a>
+
+
+    <div class="cell right_menu">
+        <a href="" title="Мой профиль">
+            <img src="images/avatar.jpg" class="right_menu">
+        </a>
+    </div>
+
+    </div>
+<hr>
+        <input type="button" value="UPPLOAD PHOTO" class="button_1"/>
+     <input type="search" name="" placeholder="поиск" class="input" />
+
+    <a href="" title="все" class="a">All</a>
+
+    <a href="" title="фото" class="a">|  Photo  |</a>
+
+    <a href="" title="видео" class="a">Video</a>
+
+    <button title="вид такой" class="button1"><a><img src="images/view.png" class="button1">
+    </a>
+    </button>
+    <button title="меню" class="button1"><a><img src="images/menu.png" class="button1">
+    </a>
+    </button>
+
+
+    <div class="right_bar">
+        <img src="images/about me.png" class="about_me">
+    <img src="images/avatar_2.jpg" class="avatar_2">
+        <h3 class="name">Хевонд</h3>
+         <h3 class="login">@xevon777</h3>
+        <br><br>
+        <h3 class="my_text">тут будет небольшой текст </h3>
+        <br>
+        <h3 class="login"><a href="http://destinytitan.ru/" target="_blank">www.destinytitan.ru</a></h3>
+        <br><br><hr>
+
+        <p class="pots">312 pots</p> <hr>
+        <p class="pots">1.2K Followers</p><hr>
+        <p class="pots">65 Following</p><hr> <br><br><br><br><br><br><br>
+        <input type="button" value="Edit Profile" class="button_2"/>
+
+    </div>
+
+    <div>
+        <img src="images/Beautiful-nature.jpg" class="image">
+        <img src="images/planeta.jpg" class="image">
+        <img src="images/harboursunset.jpg" class="image">
+        <img src="images/nature.jpg" class="image">
+        <img src="images/nature_sun.jpg" class="image">
+        <img src="images/night.jpg" class="image">
+        <img src="images/noch_nebo.jpg" class="image">
+        <img src="images/nebo.jpg" class="image">
+        <img src="images/voda.jpg" class="image">
+        <img src="images/w0062.jpg" class="image">
+        <img src="images/zemlya_solntse_planeta.jpg" class="image">
+        <img src="images/Beautiful-City.jpg" class="image">
+    </div>
+    <br>
+    <input type="button" value="еще" class="button_3"/>
+
+</header>
+
+<div class="content">
+
+</div>
+<footer class="footer">
+
+</footer>
+
+
+</body>
+</html>
